@@ -316,6 +316,20 @@ font-weight: 500;
 
 /* Gallery Page */
 
+.texto-galeria{
+    background-color: black;
+    color: white;
+    padding: 100px 35px 100px 35px;
+    font-size: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.texto-galeria p{
+    text-align: center;
+}
+
 .carrusel{
     width: 100%;
 }
@@ -326,7 +340,7 @@ font-weight: 500;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: auto;
     gap: 35px;
-    padding: 50px 35px 35px 35px;
+    padding: 35px;
 }
 
 .grid-galeria div img{
