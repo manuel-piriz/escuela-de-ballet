@@ -25,13 +25,6 @@ body{
     padding: 0px;
 }
 
-.nav-link{
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 18px;
-}
-
 .container-fluid{
     flex-direction: column;
     padding: 0%;
@@ -110,22 +103,9 @@ font-size: large;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 65%;
     background-color: rgba(0, 0, 0, 0.404);
     padding: 10px;
-}
-
-.hero a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    background-color: black;
-    font-size: 20px;
-    font-weight: 600;
-    border: 3px solid lightpink;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 20px;
 }
 
 .hero div h1{
@@ -140,9 +120,30 @@ font-size: large;
     text-align: center;
 }
 
+.boton{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border: 3px solid lightpink;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px 4px 5px 4px;
+}
+
 .history{
     width: 100%;
-    height: auto;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -209,27 +210,6 @@ font-size: large;
     padding: 15px;
 }
 
-.boton{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    background-color: black;
-    font-size: 20px;
-    font-weight: 600;
-    border: 3px solid lightpink;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 2px 4px 5px 4px;
-}
-
 .contacto{
     width: 80%;
     margin: 0 auto;
@@ -244,18 +224,32 @@ font-size: large;
     padding: 10px;
 }
 
-.contacto a{
+.boton-contacto{
     width: 94%;
     margin: 0 auto;
     font-size: larger;
-    text-decoration: none;
-    list-style: none;
-    color: black;
     background-color: lightpink;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
     font-weight: 600;
+}
+
+.boton-contacto a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.contactdata div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.contactdata div p{
+    font-weight: 500;
 }
 
 /** History Page */
@@ -600,7 +594,250 @@ font-size: large;
     flex-direction: column;
 }
 
-.footer div h2{
+.logo-footer h2{
     font-size: 15px;
 }
+
+/* ------------MEDIA QUERY------------- */
+
+
+/* ----------Home page--------- */
+
+@media screen and (max-width:1080px){
+    
+    .hero div{
+        width: 75%;
+    }
+
+    .hero a{
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .history div a{
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .galeria{
+        padding: 0;
+    }
+
+    .boton a{
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .contactdata{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .contactdata img{
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+    }
+
+    
+    .contactdata div h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contactdata div p{
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contacto{
+        width: 100%;
+    }
+
+    .boton-contacto{
+        width: 50%;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+} 
+
+@media screen and (max-width:850px){
+
+    .hero div{
+        width: 90%;
+    }
+
+    .hero div h1{
+        font-size: 29px;
+    }
+    .hero div p{
+        font-size: 20px;
+    }
+    
+    .history{
+        background-image: url("../img/history-img\(2\).png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .history div h2{
+        color: white;
+        font-size: 90px;
+        font-weight: 900;
+        margin: 35px;
+    }
+
+    .history div p{
+        display: none;
+    }
+    .history img{
+        display: none;
+    }
+
+    .galeria div p{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .galeria{
+        height: auto;
+        padding: 20px;
+    }
+
+    .galeria div p{
+        width: 100%;
+    }
+
+    .grid-galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .grid-item{
+        margin: 0 auto;
+        height: 450px;
+        width: 450px;
+    }
+}  
+
+@media screen and (max-width:602px){
+    .logo h2{
+        font-size: 20px;
+    }
+
+    .logo-footer h2{
+        font-size: 12px ;
+    }
+}
+
+@media screen and (max-width:602px){
+    .hero div h1{
+        font-size: 20px;
+    }
+
+    .hero div p{
+        font-size: 15px;
+    }
+
+    .history div h2{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:560px){
+    .grid-item{
+        margin: 0 auto;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:477px){
+    .logo h2{
+        font-size: 15px;
+    }
+
+    .logo-footer h2{
+        font-size: 9px ;
+    }
+
+    .contacto h2{
+        font-size: 18px;
+    }
+
+    .contactdata div img{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width:440px){
+
+    .hero div{
+        width: 100%;
+    }
+    
+    .hero div h1{
+        font-size: 19px;
+    }
+
+    .hero div p{
+        font-size: 12px;
+    }
+    
+    .boton a{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .history div a{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .galeria div h2{
+        font-size: 15px;
+    }
+
+    .galeria div p{
+        font-size: 12px;
+    }
+
+    .contactdata div h3{
+        
+        font-size: 15px;
+    }
+
+    .contactdata div p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:391px){
+
+    .header nav ul li a{
+        font-weight:500;
+        font-size: 15px;
+        }
+    
+    .logo h2{
+        font-size: 12px;
+    }
+
+    .logo-footer h2{
+        font-size: 8px ;
+    }
+
+    .history div h2{
+        font-size: 40px;
+    }
+}
+
+
 
