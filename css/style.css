@@ -14,7 +14,7 @@ body{
     font-family: 'DM Sans', sans-serif;
 }
 
-/** -------------HEADER------------- **/
+/*! -------------HEADER------------- **/
 
 .navbar{
     padding: 0px;
@@ -62,13 +62,14 @@ body{
 }
 
 .header nav ul li {
-    margin: 10px 20px 10px 20px;
+    margin: 10px 15px 10px 15px;
 }
 
 .header nav ul li a{
 text-decoration: none;
 color: black;
-font-weight: 500;
+font-weight:600;
+font-size: large;
 }
 
 .logo{
@@ -87,8 +88,7 @@ font-weight: 500;
 
 /*! -------------MAIN------------- !*/
 
-/* Home Page */
-
+/** Home Page */
 
 .hero{
     width: 100%;
@@ -121,8 +121,9 @@ font-weight: 500;
     color: white;
     background-color: black;
     font-size: 20px;
-    border: 2px solid lightpink;
-    border-radius: 5px;
+    font-weight: 600;
+    border: 3px solid lightpink;
+    border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
 }
@@ -130,6 +131,7 @@ font-weight: 500;
 .hero div h1{
     font-size: 35px;
     padding: 8px;
+    font-weight:700;
 }
 
 .hero div p{
@@ -147,6 +149,7 @@ font-weight: 500;
 
 .history img{
     width: 50%;
+    object-fit: cover;
 }
 
 .history div{
@@ -165,7 +168,8 @@ font-weight: 500;
     width: 50%;
     margin-bottom: 22px;
     text-align: justify;
-    font-size: 17px;    
+    font-size: 17px;
+    font-weight: 500;    
 }
 
 .history div a{
@@ -174,9 +178,10 @@ font-weight: 500;
     color: white;
     background-color: black;
     font-size: 18px;
-    border: 2px solid lightpink;
-    border-radius: 5px;
-    padding: 8px;
+    font-weight: 600;
+    border: 3px solid lightpink;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .galeria{
@@ -184,7 +189,7 @@ font-weight: 500;
     height: 100vh;
     background-color: black;
     color: white;
-    padding: 45px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +197,19 @@ font-weight: 500;
     text-align: center;
 }
 
-.boton-galeria{
+.galeria div h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.galeria div p{
+    font-size: larger;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.boton{
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -200,16 +217,17 @@ font-weight: 500;
     align-items: center;
 }
 
-.boton-galeria a{
+.boton a{
     text-decoration: none;
     list-style: none;
     color: white;
     background-color: black;
     font-size: 20px;
-    border: 2px solid lightpink;
-    border-radius: 5px;
+    font-weight: 600;
+    border: 3px solid lightpink;
+    border-radius: 10px;
     padding: 10px;
-    margin-top: 20px;
+    margin: 2px 4px 5px 4px;
 }
 
 .contacto{
@@ -236,23 +254,26 @@ font-weight: 500;
     background-color: lightpink;
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
 }
 
-/* History Page */
+/** History Page */
 
 .historyhero{
     width: 100%;
     height: 80vh;
-    background-image: url("../img/historia-p.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:top;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+}
+
+.historyhero h1{
+    font-weight: 900;
+    font-size: 50px;
 }
 
 .historyhero div{
@@ -262,33 +283,59 @@ font-weight: 500;
 }
 
 .historyhero div p{
-    font-size: 25px;
+    font-size: 35px;
     width: 100%;
     padding: 10px;
     font-weight:500;
 }
 
 .origen{
+    background-color: black;
+    background-size: 75%;
     width: 100%;
     height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .origen div{
-    width: 80%;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    background-color: white;
+    padding: 80px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
 }
 
-.actualidad{
+.origen div img{
+    border: 3px solid black;
+}
+
+.origen div p{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.origen h3{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.espacio-extra{
     width: 100%;
     height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Courses Page */
+
+/** Courses Page */
 
 .coursehero{
     width: 100%;
@@ -338,6 +385,13 @@ font-weight: 500;
     padding: 50px;
 }
 
+.cursos-marco{
+    border: 3px solid lightpink;
+    border-radius: 15px;
+    padding: 30px 90px 30px 90px;
+    margin: 30px;
+}
+
 .coursewelcome{
     display: flex;
     flex-direction: column;
@@ -347,7 +401,28 @@ font-weight: 500;
 }
 
 .cursos div{
-    height: 30vh;
+    height: auto;
+}
+
+.cursos h2{
+    padding-top: 30px;
+    font-weight: 600;
+}
+
+.cursos h3{
+    font-size: larger;
+    font-weight: 500;
+    padding: 20px 0px 40px 0px;
+}
+
+.cursos h4{
+    padding: 35px 0px 10px 0px;
+    font-weight: 600;
+}
+
+.cursos p{
+    font-size: large;
+    padding: 15px 0px 15px 0px;
 }
 
 .coursebye{
@@ -363,6 +438,7 @@ font-weight: 500;
 .coursebye p{
     text-align: center;
     font-size: larger;
+    padding: 10px;
 }
 
 .coursebye a{
@@ -373,12 +449,13 @@ font-weight: 500;
     color: white;
     background-color: black;
     font-size: 18px;
-    border: 2px solid lightpink;
+    font-weight: 600;
+    border: 3px solid lightpink;
     border-radius: 5px;
-    padding: 8px;
+    padding: 10px;
 }
 
-/* Gallery Page */
+/** Gallery Page */
 
 .texto-galeria{
     background-color: black;
@@ -423,7 +500,7 @@ font-weight: 500;
 }
 
 
-/* Contact Page */
+/** Contact Page */
 
 .contacthero{
     width: 100%;
@@ -457,38 +534,52 @@ font-weight: 500;
 .contactdata img{
     height: 65px;
     width: 65px;
+    object-fit: cover;
 }
 
 .mapa{
     padding-bottom: 50px;
 }
 
-.motivar{
-    display: flex;
-    justify-content: center;
-}
-
-.motivar div{
+.formulario-section{
+    height: 80vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+}
+
+.motivar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.motivar h3{
+    font-weight: 600;
     text-align: center;
 }
 
-.motivar div p{
-    padding: 20px;
+.motivar p{
+    font-size: large;
+    font-weight: 500;
 }
-
 
 .formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
+    width: 40%;
+    border: 3px solid lightpink;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 10px 50px 10px;
 }
 
-/** -------------FOOTER------------- **/
+.input{
+    width: 100%;
+    height:initial;
+}
+
+/*! -------------FOOTER------------- **/
 
 .footer{
     background-color:black;
@@ -510,6 +601,6 @@ font-weight: 500;
 }
 
 .footer div h2{
-    font-size: 12px;
+    font-size: 15px;
 }
 
