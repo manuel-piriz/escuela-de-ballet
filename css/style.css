@@ -78,7 +78,7 @@ font-size: large;
     padding: 5px;
 }
 
-.logo h2{
+.logo h1{
     font-size: 27px;
 }
 
@@ -112,7 +112,7 @@ font-size: large;
     padding: 10px;
 }
 
-.hero div h1{
+.hero div h2{
     font-size: 35px;
     padding: 8px;
     font-weight:700;
@@ -300,10 +300,10 @@ font-size: large;
 }
 
 .cursos{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     height: auto;
-    padding: 50px;
+    padding: 20px;
 }
 
 .cursos-marco{
@@ -325,18 +325,18 @@ font-size: large;
     height: auto;
 }
 
-.cursos h2{
+.cursos h3{
     padding-top: 30px;
     font-weight: 600;
 }
 
-.cursos h3{
+.cursos h4{
     font-size: larger;
     font-weight: 500;
     padding: 20px 0px 40px 0px;
 }
 
-.cursos h4{
+.cursos h5{
     padding: 35px 0px 10px 0px;
     font-weight: 600;
 }
@@ -389,7 +389,7 @@ font-size: large;
     text-align: center;
 }
 
-.historyhero h1{
+.historyhero h2{
     font-weight: 900;
     font-size: 50px;
 }
@@ -521,6 +521,10 @@ font-size: large;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contacthero div h2{
+    font-weight: 600;
 }
 
 .contactdata{
@@ -854,4 +858,14 @@ font-size: large;
 }
 
 
+/* ----------COURSES PAGE---------- */
 
+@media screen and (max-width:721px){
+    .cursos-marco{
+        padding: 10px 30px 10px 30px;
+    }
+
+    .coursebye{
+        width: 80%;
+    }
+}
