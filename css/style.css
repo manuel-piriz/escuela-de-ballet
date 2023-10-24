@@ -65,10 +65,18 @@ body{
 }
 
 .header nav ul li a{
-text-decoration: none;
-color: black;
-font-weight:600;
-font-size: large;
+    text-decoration: none;
+    color: black;
+    font-weight:600;
+    font-size: large;
+}
+
+.header nav ul li a:hover{
+    color: white;
+    }
+
+.nav-link.active:hover{
+    color: white;
 }
 
 .logo{
@@ -147,16 +155,15 @@ font-size: large;
     margin: 2px 4px 5px 4px;
 }
 
+.boton a:hover{
+    color: lightpink;
+}
+
 .history{
     width: 100%;
     height: 80vh;
     display: flex;
     justify-content: center;
-}
-
-.history img{
-    width: 50%;
-    object-fit: cover;
 }
 
 .history div{
@@ -190,6 +197,15 @@ font-size: large;
     border: 3px solid lightpink;
     border-radius: 10px;
     padding: 10px;
+}
+
+.history div a:hover{
+    color: lightpink;
+}
+
+.history img{
+    width: 50%;
+    object-fit: cover;
 }
 
 .galeria{
@@ -247,6 +263,10 @@ font-size: large;
     list-style: none;
     color: black;
 }
+
+.boton-contacto a:hover{
+    color: white;
+    }
 
 .contactdata div {
     display: flex;
@@ -375,6 +395,10 @@ font-size: large;
     border-top: 3px solid lightpink;
     border-bottom: 3px solid lightpink;
     padding: 10px;
+}
+
+.coursebye div a:hover{
+    color: lightpink
 }
 
 /** History Page */
@@ -592,24 +616,36 @@ font-size: large;
     background-color:black;
     display: flex;
     color: white;
-    padding: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer img{
+.logo-footer img{
     width: 43px;
     height: 65px;
-    margin: 10px 20px 10px 20px;
+    margin: 10px;
 }
 
-.footer div{
+.logo-footer{
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
 
 .logo-footer h2{
     font-size: 15px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links img{
+    height: 60px;
+    width: 60px;
 }
 
 /* ------------MEDIA QUERY------------- */
@@ -619,7 +655,7 @@ font-size: large;
 
 @media screen and (max-width:1080px){
 
-    .hero a{
+    .boton a{
         font-size: 15px;
         padding: 8px;
     }
@@ -785,6 +821,16 @@ font-size: large;
         font-size: 9px ;
     }
 
+    .logo-footer img{
+        height: 55px;
+        width: 33px;
+    }
+
+    .links img{
+        height: 45px;
+        width: 45px;
+    }
+
     .contacto h2{
         font-size: 18px;
     }
@@ -834,10 +880,6 @@ font-size: large;
     
     .logo h1{
         font-size: 12px;
-    }
-
-    .logo-footer h2{
-        font-size: 8px ;
     }
 
     .history div h2{

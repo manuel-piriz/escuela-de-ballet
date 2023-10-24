@@ -1,0 +1,450 @@
+/** Home Page */
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    color: $color-terciario;
+    background-image: url("../img/home-p.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: $color-transparencia;
+        padding: 10px;
+
+        h2 {
+            font-size: 45px;
+            padding: 8px;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+.history {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            margin: 15px;
+            font-weight: 900;
+            font-size: 50px;
+        }
+
+        p {
+            width: 50%;
+            margin-bottom: 22px;
+            text-align: justify;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: $color-terciario;
+            background-color: $color-principal;
+            font-size: 18px;
+            font-weight: 600;
+            border: 3px solid $color-secundario;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        a:hover {
+            color: $color-secundario;
+        }
+    }
+
+    img {
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+.galeria {
+    width: 100%;
+    height: 100vh;
+    background-color: $color-principal;
+    color: $color-terciario;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div {
+        h2 {
+            font-size: 35px;
+            font-weight: 600;
+            padding-top: 15px;
+        }
+
+        p {
+            font-size: larger;
+            font-weight: 600;
+            padding: 15px;
+        }
+    }
+}
+
+.contacto {
+    width: 80%;
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .boton-contacto {
+        width: 94%;
+        margin: 0 auto;
+        font-size: larger;
+        background-color: $color-secundario;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: 600;
+
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: $color-principal;
+        }
+
+        a:hover {
+            color: $color-terciario;
+        }
+    }
+}
+
+/** Cursos Page */
+
+.coursehero {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/cursos-p.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-terciario;
+    text-align: center;
+
+    div {
+        width: 100%;
+        background-color: $color-transparencia;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color-terciario;
+        text-align: center;
+        padding: 10px;
+
+        h2 {
+            margin: 15px;
+            font-weight: 900;
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 25px;
+            width: 65%;
+            padding: 10px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+.cursos {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px;
+
+    .coursewelcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        h3 {
+            padding-top: 30px;
+            font-weight: 600;
+        }
+    }
+
+    .cursos-marco {
+        border: 3px solid $color-secundario;
+        border-radius: 15px;
+        padding: 30px 90px 30px 90px;
+        margin: 30px;
+
+        div {
+            height: auto;
+
+            h4 {
+                padding: 35px 0px 10px 0px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: large;
+                padding: 15px 0px 15px 0px;
+            }
+        }
+    }
+}
+
+.coursebye {
+    width: 100%;
+
+    div {
+        background-color: $color-principal;
+        color: $color-terciario;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            text-align: center;
+            font-size: larger;
+            padding: 10px;
+        }
+    
+        a {
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+            list-style: none;
+            color: $color-terciario;
+            background-color: $color-principal;
+            font-size: 18px;
+            font-weight: 600;
+            border-top: 3px solid $color-secundario;
+            border-bottom: 3px solid $color-secundario;
+            padding: 10px;
+            &a:hover {
+                color: $color-secundario;
+            }
+        }
+    }
+}
+
+/** History Page */
+
+.historyhero {
+    width: 100%;
+    height: 80vh;
+    background-color: $color-principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-terciario;
+    text-align: center;
+
+    h2 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    div {
+        width: auto;
+        background-color: $color-transparencia;
+        padding: 20px;
+
+        p {
+            font-size: 35px;
+            width: 100%;
+            padding: 10px;
+            font-weight: 500;
+        }
+    }
+}
+
+.origen {
+    background-color: $color-principal;
+    background-size: 75%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    div {
+        width: 59%;
+        margin: 0 auto;
+        height: auto;
+        background-color: $color-terciario;
+        border: 10px solid $color-secundario;
+        padding: 3.5% 2.5% 2.5% 2.5%;
+        color: $color-principal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            border: 3px solid $color-principal;
+        }
+
+        p {
+            width: 80%;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    h3 {
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 5%;
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-terciario;
+        text-align: center;
+    }
+}
+
+.espacio {
+    background-color: $color-principal;
+    height: 50px;
+}
+
+/** Gallery Page */
+
+.texto-galeria {
+    background-color: $color-principal;
+    color: $color-terciario;
+    padding: 80px 35px 100px 35px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+        text-align: center;
+    }
+}
+
+.carrusel {
+    width: 100%;
+
+    .carousel-item {
+        z-index: -1;
+
+        .slide img {
+            height: 80vh;
+            object-fit: cover;
+        }
+    }
+}
+
+/** Contact Page */
+
+.contacthero {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/contacto-p.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-terciario;
+
+    div {
+        width: 100%;
+        background-color: $color-transparencia;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 45px;
+            font-weight: 900;
+        }
+    }
+}
+
+.mapa {
+    padding-bottom: 50px;
+}
+
+.formulario-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .motivar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-weight: 600;
+            text-align: center;
+        }
+
+        p {
+            font-size: large;
+            font-weight: 500;
+        }
+    }
+
+    .formulario {
+        width: 40%;
+        border: 3px solid $color-secundario;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px 10px 50px 10px;
+
+        .input {
+            width: 100%;
+            height: initial;
+        }
+    }
+}

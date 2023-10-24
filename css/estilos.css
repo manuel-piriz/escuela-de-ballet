@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap");
+/* -------------RESET------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif; }
+
+.grid-galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 35px;
+  padding: 35px; }
+  .grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.contactdata {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 30px 60px 30px; }
+  .contactdata img {
+    height: 65px;
+    width: 65px;
+    object-fit: cover; }
+  .contactdata div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contactdata div p {
+      font-weight: 500; }
+
+.boton {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .boton a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border: 3px solid lightpink;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px 4px 5px 4px; }
+    .boton a:hover {
+      color: lightpink; }
+
+.header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  color: white; }
+  .header div img {
+    width: 43px;
+    height: 65px;
+    margin: 10px 20px 10px 20px; }
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header nav ul li {
+      margin: 10px 15px 10px 15px; }
+      .header nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: large; }
+        .header nav ul li a.active:hover {
+          color: white; }
+        .header nav ul li a:hover {
+          color: white; }
+  .header .logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; }
+    .header .logo h1 {
+      font-size: 27px; }
+
+.navbar {
+  padding: 0px; }
+  .navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  .navbar .navbar-brand {
+    margin: 0px;
+    padding: 0px; }
+  .navbar .container-fluid {
+    flex-direction: column;
+    padding: 0%; }
+  .navbar .collapse {
+    background-color: lightpink;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white; }
+
+/** Home Page */
+.hero {
+  width: 100%;
+  height: 80vh;
+  color: white;
+  background-image: url("../img/home-p.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .hero div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 10px; }
+    .hero div h2 {
+      font-size: 45px;
+      padding: 8px;
+      font-weight: 900; }
+    .hero div p {
+      font-size: 25px;
+      font-weight: 500;
+      text-align: center; }
+
+.history {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center; }
+  .history div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .history div h2 {
+      margin: 15px;
+      font-weight: 900;
+      font-size: 50px; }
+    .history div p {
+      width: 50%;
+      margin-bottom: 22px;
+      text-align: justify;
+      font-size: 17px;
+      font-weight: 500; }
+    .history div a {
+      text-decoration: none;
+      list-style: none;
+      color: white;
+      background-color: black;
+      font-size: 18px;
+      font-weight: 600;
+      border: 3px solid lightpink;
+      border-radius: 10px;
+      padding: 10px; }
+    .history div a:hover {
+      color: lightpink; }
+  .history img {
+    width: 50%;
+    object-fit: cover; }
+
+.galeria {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .galeria div h2 {
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 15px; }
+  .galeria div p {
+    font-size: larger;
+    font-weight: 600;
+    padding: 15px; }
+
+.contacto {
+  width: 80%;
+  margin: 0 auto;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .contacto h2 {
+    text-align: center;
+    padding: 10px; }
+  .contacto .boton-contacto {
+    width: 94%;
+    margin: 0 auto;
+    font-size: larger;
+    background-color: lightpink;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600; }
+    .contacto .boton-contacto a {
+      text-decoration: none;
+      list-style: none;
+      color: black; }
+    .contacto .boton-contacto a:hover {
+      color: white; }
+
+/** Cursos Page */
+.coursehero {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/cursos-p.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center; }
+  .coursehero div {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px; }
+    .coursehero div h2 {
+      margin: 15px;
+      font-weight: 900;
+      font-size: 50px; }
+    .coursehero div p {
+      font-size: 25px;
+      width: 65%;
+      padding: 10px;
+      font-weight: 500;
+      text-align: center; }
+
+.cursos {
+  width: 95%;
+  margin: 0 auto;
+  height: auto;
+  padding: 20px; }
+  .cursos .coursewelcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+    .cursos .coursewelcome h3 {
+      padding-top: 30px;
+      font-weight: 600; }
+  .cursos .cursos-marco {
+    border: 3px solid lightpink;
+    border-radius: 15px;
+    padding: 30px 90px 30px 90px;
+    margin: 30px; }
+    .cursos .cursos-marco div {
+      height: auto; }
+      .cursos .cursos-marco div h4 {
+        padding: 35px 0px 10px 0px;
+        font-weight: 600; }
+      .cursos .cursos-marco div p {
+        font-size: large;
+        padding: 15px 0px 15px 0px; }
+
+.coursebye {
+  width: 100%; }
+  .coursebye div {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .coursebye div p {
+      text-align: center;
+      font-size: larger;
+      padding: 10px; }
+    .coursebye div a {
+      width: 100%;
+      text-decoration: none;
+      text-align: center;
+      list-style: none;
+      color: white;
+      background-color: black;
+      font-size: 18px;
+      font-weight: 600;
+      border-top: 3px solid lightpink;
+      border-bottom: 3px solid lightpink;
+      padding: 10px; }
+      .coursebye div aa:hover {
+        color: lightpink; }
+
+/** History Page */
+.historyhero {
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center; }
+  .historyhero h2 {
+    font-weight: 900;
+    font-size: 50px; }
+  .historyhero div {
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 20px; }
+    .historyhero div p {
+      font-size: 35px;
+      width: 100%;
+      padding: 10px;
+      font-weight: 500; }
+
+.origen {
+  background-color: black;
+  background-size: 75%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+  .origen div {
+    width: 59%;
+    margin: 0 auto;
+    height: auto;
+    background-color: white;
+    border: 10px solid lightpink;
+    padding: 3.5% 2.5% 2.5% 2.5%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .origen div img {
+      border: 3px solid black; }
+    .origen div p {
+      width: 80%;
+      font-size: 16px;
+      font-weight: 500; }
+  .origen h3 {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center; }
+
+.espacio {
+  background-color: black;
+  height: 50px; }
+
+/** Gallery Page */
+.texto-galeria {
+  background-color: black;
+  color: white;
+  padding: 80px 35px 100px 35px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .texto-galeria p {
+    text-align: center; }
+
+.carrusel {
+  width: 100%; }
+  .carrusel .carousel-item {
+    z-index: -1; }
+    .carrusel .carousel-item .slide img {
+      height: 80vh;
+      object-fit: cover; }
+
+/** Contact Page */
+.contacthero {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/contacto-p.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  .contacthero div {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contacthero div h2 {
+      font-size: 45px;
+      font-weight: 900; }
+
+.mapa {
+  padding-bottom: 50px; }
+
+.formulario-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .formulario-section .motivar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .formulario-section .motivar h3 {
+      font-weight: 600;
+      text-align: center; }
+    .formulario-section .motivar p {
+      font-size: large;
+      font-weight: 500; }
+  .formulario-section .formulario {
+    width: 40%;
+    border: 3px solid lightpink;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 10px 50px 10px; }
+    .formulario-section .formulario .input {
+      width: 100%;
+      height: initial; }
+
+.footer {
+  background-color: black;
+  display: flex;
+  color: white;
+  padding: 10px;
+  justify-content: space-between; }
+  .footer .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .logo-footer img {
+      width: 43px;
+      height: 65px;
+      margin: 10px; }
+    .footer .logo-footer h2 {
+      font-size: 15px; }
+  .footer .links {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .links a {
+      margin: 0 10px; }
+      .footer .links a img {
+        height: 60px;
+        width: 60px; }

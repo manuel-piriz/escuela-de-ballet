@@ -1,0 +1,38 @@
+.footer {
+    background-color: $color-principal;
+    display: flex;
+    color: $color-terciario;
+    padding: 10px;
+    justify-content: space-between;
+
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 43px;
+            height: 65px;
+            margin: 10px;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin: 0 10px;
+
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+}

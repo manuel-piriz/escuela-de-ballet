@@ -1,0 +1,79 @@
+.header {
+    background-color: $color-principal;
+    position: sticky;
+    top: 0;
+    color: $color-terciario;
+
+    div {
+        img {
+            width: 43px;
+            height: 65px;
+            margin: 10px 20px 10px 20px;
+        }
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                margin: 10px 15px 10px 15px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                    font-size: large;
+
+                    &.active:hover {
+                        color: $color-terciario;
+                    }
+
+                    &:hover {
+                        color: $color-terciario;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+
+        h1 {
+            font-size: 27px;
+        }
+    }
+}
+
+.navbar {
+    padding: 0px;
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-brand {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container-fluid {
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    .collapse {
+        background-color: $color-secundario;
+        border-top: 3px solid $color-terciario;
+        border-bottom: 3px solid $color-terciario;
+    }
+}
