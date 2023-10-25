@@ -73,10 +73,10 @@
             border: 3px solid $color-secundario;
             border-radius: 10px;
             padding: 10px;
-        }
 
-        a:hover {
-            color: $color-secundario;
+            &:hover {
+                color: $color-secundario;
+            }
         }
     }
 
@@ -140,10 +140,10 @@
             text-decoration: none;
             list-style: none;
             color: $color-principal;
-        }
 
-        a:hover {
-            color: $color-terciario;
+            &:hover {
+                color: $color-terciario;
+            }
         }
     }
 }
@@ -249,7 +249,7 @@
             font-size: larger;
             padding: 10px;
         }
-    
+
         a {
             width: 100%;
             text-decoration: none;
@@ -262,7 +262,8 @@
             border-top: 3px solid $color-secundario;
             border-bottom: 3px solid $color-secundario;
             padding: 10px;
-            &a:hover {
+
+            &:hover {
                 color: $color-secundario;
             }
         }
@@ -281,15 +282,15 @@
     color: $color-terciario;
     text-align: center;
 
-    h2 {
-        font-weight: 900;
-        font-size: 50px;
-    }
-
     div {
         width: auto;
         background-color: $color-transparencia;
         padding: 20px;
+
+        h2 {
+            font-weight: 900;
+            font-size: 50px;
+        }
 
         p {
             font-size: 35px;
@@ -306,6 +307,16 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
+
+    h3 {
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 5%;
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-terciario;
+        text-align: center;
+    }
 
     div {
         width: 59%;
@@ -330,16 +341,6 @@
             font-weight: 500;
         }
     }
-
-    h3 {
-        width: 60%;
-        margin: 0 auto;
-        padding-bottom: 5%;
-        font-size: 20px;
-        font-weight: 600;
-        color: $color-terciario;
-        text-align: center;
-    }
 }
 
 .espacio {
@@ -348,6 +349,16 @@
 }
 
 /** Gallery Page */
+
+.carrusel {
+    width: 100%;
+
+    .carousel-item {
+        z-index: -1;
+        height: auto;
+        object-fit:contain;
+    }
+}
 
 .texto-galeria {
     background-color: $color-principal;
@@ -359,21 +370,8 @@
     justify-content: center;
     text-align: center;
 
-    p {
+    h2 {
         text-align: center;
-    }
-}
-
-.carrusel {
-    width: 100%;
-
-    .carousel-item {
-        z-index: -1;
-
-        .slide img {
-            height: 80vh;
-            object-fit: cover;
-        }
     }
 }
 
@@ -442,9 +440,12 @@
         padding: 15px;
         margin: 10px 10px 50px 10px;
 
-        .input {
-            width: 100%;
-            height: initial;
+        div {
+
+            .input {
+                width: 100%;
+                height: initial;
+            }
         }
     }
 }

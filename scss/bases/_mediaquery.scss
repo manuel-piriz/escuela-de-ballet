@@ -1,0 +1,1296 @@
+/* ------------MEDIA QUERY------------- */
+
+/* ----------Home page--------- */
+
+@media screen and (max-width:1080px) {
+
+    .hero {
+
+        .boton {
+
+            a {
+                font-size: 15px;
+                padding: 8px;
+            }
+        }
+    }
+
+    .history {
+
+        div {
+
+            a {
+                font-size: 15px;
+                padding: 8px;
+            }
+        }
+    }
+
+    .galeria {
+        padding: 0;
+
+        .boton {
+
+            a {
+                font-size: 15px;
+                padding: 8px;
+            }
+        }
+    }
+
+    .contacto {
+        width: 100%;
+
+        .contactdata {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+
+            div {
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    margin: 10px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+
+        .boton-contacto {
+            width: 50%;
+            margin-top: 15px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .navbar {
+        .container-fluid {
+
+            .collapse {
+
+                .navbar-nav {
+
+                    .nav-item {
+
+                        .nav-link {
+                            font-weight: 500;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+
+        div {
+
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .history {
+        background-image: url("../img/history-img\(2\).png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        div {
+    
+            h2 {
+                color: white;
+                font-size: 90px;
+                font-weight: 900;
+                margin: 35px;
+            }
+    
+            p {
+                display: none;
+            }
+        }
+    
+        img {
+            display: none;
+        }
+    }
+    
+    .galeria {
+        height: auto;
+        padding: 20px;
+    
+        div {
+    
+            p {
+                width: 75%;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    
+        .grid-galeria {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+    
+            .grid-item {
+                margin: 0 auto;
+                height: 450px;
+                width: 450px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:602px) {
+
+
+    .header {
+        .navbar {
+            .container-fluid {
+
+                .logo {
+
+                    h1 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+
+        div {
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .history {
+        background-image: url("../img/history-img\(2\).png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        div {
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    .footer {
+        .logo-footer {
+
+            h2 {
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:560px) {
+
+    .galeria {
+
+        div {
+
+            h2 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .grid-galeria {
+
+            .grid-item {
+                margin: 0 auto;
+                height: 300px;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:477px) {
+
+    .header {
+        .navbar {
+            .container-fluid {
+
+                .logo {
+
+                    h1 {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contacto {
+        width: 100%;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .contactdata {
+
+            div {
+                img {
+                    height: 25px;
+                    width: 25px;
+                    margin: 7px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .logo-footer {
+
+            h2 {
+                font-size: 9px;
+            }
+
+            img {
+                height: 55px;
+                width: 33px;
+            }
+        }
+
+        .links {
+
+            a {
+                img {
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+
+    .navbar {
+        .container-fluid {
+
+            .collapse {
+
+                .navbar-nav {
+
+                    .nav-item {
+
+                        .nav-link {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+
+        div {
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12.5px;
+            }
+        }
+
+        .boton {
+
+            a {
+                font-size: 10px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .history {
+
+        div {
+
+            h2 {
+                font-size: 40px;
+            }
+
+            a {
+                font-size: 10px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .galeria {
+        .boton {
+
+            a {
+                font-size: 10px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .contacto {
+
+        .contactdata {
+
+            div {
+                h3 {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .boton-contacto{
+
+            a{
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:391px) {
+
+    .header {
+        .navbar {
+            .container-fluid {
+
+                .logo {
+
+                    h1 {
+                        font-size: 12px;
+                    }
+                }
+
+                .collapse {
+
+                    .navbar-nav {
+
+                        .nav-item {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .galeria {
+
+        .grid-galeria {
+
+            .grid-item {
+                margin: 0 auto;
+                height: 200px;
+                width: 200px
+            }
+        }
+    }
+}
+
+/* ----------COURSES PAGE---------- */
+
+@media screen and (max-width:1080px) {
+
+    .coursehero {
+
+        div {
+
+            h2 {
+                font-size: 45px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .cursos {
+        width: 100%;
+
+        .coursewelcome {
+
+            h3 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .cursos-marco {
+            padding: 30px;
+
+            div {
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .coursebye {
+
+        div {
+
+            p {
+                padding: 5px;
+                font-size: 16px;
+            }
+
+            a {
+                font-size: 16px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:880px) {
+
+    .coursebye {
+
+        div {
+            padding: 0;
+            padding-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:840px) {
+
+    .coursehero {
+
+        div {
+
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 19px;
+            }
+        }
+    }
+
+    .cursos {
+        width: 100%;
+
+        .coursewelcome {
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .cursos-marco {
+            padding: 30px;
+
+            div {
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .coursebye {
+
+        div {
+
+            p {
+                width: 80%;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .coursebye {
+
+        div {
+            padding: 0;
+        }
+    }
+
+    .cursos {
+
+        .cursos-marco {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width:765px) {
+
+    .cursos {
+
+        .coursewelcome {
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        .cursos-marco {
+
+            div {
+
+                h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:721px) {
+
+    .cursos {
+
+        .cursos-marco {
+            padding: 10px 30px 10px 30px;
+        }
+    }
+}
+
+@media screen and (max-width:691px) {
+
+    .coursehero {
+
+        div {
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .cursos {
+
+        .coursewelcome {
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .cursos-marco {
+
+            div {
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .coursebye {
+
+        div {
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:619px) {
+
+    .cursos {
+
+        .coursewelcome {
+
+            h3 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .cursos-marco {
+
+            div {
+
+                h4 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .coursebye {
+
+        div {
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:548px) {
+
+    .coursehero {
+
+        div {
+
+            p {
+                width: 80%;
+            }
+        }
+    }
+
+    .cursos {
+        width: 90%;
+        padding: 5px 5px 15px 5px;
+
+        .coursewelcome {
+
+            h3 {
+                text-align: center;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .coursebye {
+
+        div {
+
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+
+    .cursos {
+        width: 90%;
+    }
+}
+
+/* ----------HISTORY PAGE---------- */
+
+@media screen and (max-width:1200px) {
+
+    .origen {
+
+        h3 {
+            font-size: 19px;
+            width: 65%;
+        }
+
+        div {
+
+            img {
+                height: 315px;
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1080px) {
+
+    .historyhero {
+
+        div {
+
+            h2 {
+                font-size: 45px;
+            }
+
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .origen {
+
+        div {
+            width: 75%;
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:840px) {
+
+    .historyhero {
+
+        div {
+
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .origen {
+
+        h3 {
+            font-size: 16px;
+            width: 75%;
+        }
+
+        div {
+
+            img {
+                height: 275px;
+                width: 400px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .origen {
+
+        h3 {
+            font-size: 15px;
+        }
+
+        div {
+            width: 80%;
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:620px) {
+
+    .historyhero {
+
+        div {
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .origen {
+
+        h3 {
+            font-size: 14px;
+            width: 65%;
+        }
+
+        div {
+
+            img {
+                height: 225px;
+                width: 320px;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
+    }
+
+    .espacio {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:530px) {
+
+    .origen {
+
+        h3 {
+            font-size: 14px;
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width:461px) {
+
+    .historyhero {
+
+        div {
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .origen {
+
+        h3 {
+            font-size: 13px;
+            width: 80%;
+        }
+
+        div {
+
+            img {
+                height: 185px;
+                width: 280px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:401px) {
+
+    .historyhero {
+
+        div {
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .origen {
+
+        h3 {
+            font-size: 12px;
+            width: 86%;
+        }
+
+        div {
+            width: 90%;
+
+            img {
+                height: 165px;
+                width: 250px;
+            }
+
+            p {
+                font-size: 11px;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+/* ----------GALLERY PAGE---------- */
+
+@media screen and (max-width:1080px) {
+
+    .texto-galeria {
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:850px){
+
+    .grid-galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+
+        .grid-item {
+            margin: 0 auto;
+            height: 450px;
+            width: 450px;
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .texto-galeria {
+
+        h2 {
+            width: 65%;
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width:561px) {
+
+    .texto-galeria {
+
+        h2 {
+            font-size: 15px;
+        }
+    }
+
+    .grid-galeria {
+
+        .grid-item {
+            margin: 0 auto;
+            height: 300px;
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width:475px) {
+
+    .texto-galeria {
+
+        p {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width:391px) {
+
+    .texto-galeria {
+
+        h2 {
+            width: 70%;
+            font-size: 14px;
+        }
+
+        p {
+            width: 85%;
+            font-size: 12px;
+        }
+    }
+
+    .grid-galeria {
+
+        .grid-item {
+            margin: 0 auto;
+            height: 200px;
+            width: 200px
+        }
+    }
+}
+
+/* ----------CONTACT PAGE---------- */
+
+@media screen and (max-width:1200px){
+
+    .contacthero{
+
+        div{
+
+            h2{
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1080px){
+
+    .contacthero{
+
+        div{
+
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .contactdata {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+
+        img {
+            width: 35px;
+            height: 35px;
+            margin: 10px;
+        }
+
+        div {
+
+            h3 {
+                font-size: 18px;
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    .formulario-section{
+
+        .motivar{
+
+            h3{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+
+        .formulario{
+
+            div{
+
+                label{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .contacthero{
+
+        div{
+
+            h2{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:689px){
+
+    .contacthero{
+
+        div{
+
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .formulario-section{
+
+        .formulario{
+            width: 50%;
+        }
+    }
+    
+}
+
+@media screen and (max-width:565px){
+
+    .contacthero{
+
+        div{
+
+            h2{
+                font-size: 28px; 
+                text-align: center;
+            }
+        }
+    }
+
+    .contactdata {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+            img {
+                height: 25px;
+                width: 25px;
+                margin: 7px;
+            }
+    }
+
+    .formulario-section{
+
+        .formulario{
+            width: 75%;
+
+            .boton{
+
+                a{
+                    font-size: 14px;
+                    padding: 8px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+
+    .contacthero{
+
+        div{
+
+            h2{
+                font-size: 22px; 
+                text-align: center;
+            }
+        }
+    }
+
+    .formulario-section{
+
+        .motivar{
+
+            h3{
+                font-size: 15px;
+            }
+
+            p{
+                font-size: 12px;
+            }
+        }
+
+        .formulario{
+            width: 80%;
+
+            div{
+
+                label{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px){
+
+	.contactdata {
+
+            div {
+                h3 {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+}

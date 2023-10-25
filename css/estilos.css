@@ -169,8 +169,8 @@ body {
       border: 3px solid lightpink;
       border-radius: 10px;
       padding: 10px; }
-    .history div a:hover {
-      color: lightpink; }
+      .history div a:hover {
+        color: lightpink; }
   .history img {
     width: 50%;
     object-fit: cover; }
@@ -218,8 +218,8 @@ body {
       text-decoration: none;
       list-style: none;
       color: black; }
-    .contacto .boton-contacto a:hover {
-      color: white; }
+      .contacto .boton-contacto a:hover {
+        color: white; }
 
 /** Cursos Page */
 .coursehero {
@@ -310,7 +310,7 @@ body {
       border-top: 3px solid lightpink;
       border-bottom: 3px solid lightpink;
       padding: 10px; }
-      .coursebye div aa:hover {
+      .coursebye div a:hover {
         color: lightpink; }
 
 /** History Page */
@@ -323,13 +323,13 @@ body {
   align-items: center;
   color: white;
   text-align: center; }
-  .historyhero h2 {
-    font-weight: 900;
-    font-size: 50px; }
   .historyhero div {
     width: auto;
     background-color: rgba(0, 0, 0, 0.404);
     padding: 20px; }
+    .historyhero div h2 {
+      font-weight: 900;
+      font-size: 50px; }
     .historyhero div p {
       font-size: 35px;
       width: 100%;
@@ -342,6 +342,14 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto; }
+  .origen h3 {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center; }
   .origen div {
     width: 59%;
     margin: 0 auto;
@@ -360,20 +368,19 @@ body {
       width: 80%;
       font-size: 16px;
       font-weight: 500; }
-  .origen h3 {
-    width: 60%;
-    margin: 0 auto;
-    padding-bottom: 5%;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    text-align: center; }
 
 .espacio {
   background-color: black;
   height: 50px; }
 
 /** Gallery Page */
+.carrusel {
+  width: 100%; }
+  .carrusel .carousel-item {
+    z-index: -1;
+    height: auto;
+    object-fit: contain; }
+
 .texto-galeria {
   background-color: black;
   color: white;
@@ -383,16 +390,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center; }
-  .texto-galeria p {
+  .texto-galeria h2 {
     text-align: center; }
-
-.carrusel {
-  width: 100%; }
-  .carrusel .carousel-item {
-    z-index: -1; }
-    .carrusel .carousel-item .slide img {
-      height: 80vh;
-      object-fit: cover; }
 
 /** Contact Page */
 .contacthero {
@@ -444,7 +443,7 @@ body {
     border-radius: 10px;
     padding: 15px;
     margin: 10px 10px 50px 10px; }
-    .formulario-section .formulario .input {
+    .formulario-section .formulario div .input {
       width: 100%;
       height: initial; }
 
@@ -473,3 +472,489 @@ body {
       .footer .links a img {
         height: 60px;
         width: 60px; }
+
+/* ------------MEDIA QUERY------------- */
+/* ----------Home page--------- */
+@media screen and (max-width: 1080px) {
+  .hero .boton a {
+    font-size: 15px;
+    padding: 8px; }
+  .history div a {
+    font-size: 15px;
+    padding: 8px; }
+  .galeria {
+    padding: 0; }
+    .galeria .boton a {
+      font-size: 15px;
+      padding: 8px; }
+  .contacto {
+    width: 100%; }
+    .contacto .contactdata {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0; }
+      .contacto .contactdata div img {
+        width: 35px;
+        height: 35px;
+        margin: 10px; }
+      .contacto .contactdata div h3 {
+        font-size: 18px;
+        padding: 0;
+        margin: 0; }
+      .contacto .contactdata div p {
+        font-size: 14px;
+        padding: 0;
+        margin: 0; }
+    .contacto .boton-contacto {
+      width: 50%;
+      margin-top: 15px;
+      font-size: 15px; } }
+
+@media screen and (max-width: 850px) {
+  .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 15px; }
+  .hero div h2 {
+    font-size: 35px; }
+  .hero div p {
+    font-size: 20px; }
+  .history {
+    background-image: url("../img/history-img(2).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .history div h2 {
+      color: white;
+      font-size: 90px;
+      font-weight: 900;
+      margin: 35px; }
+    .history div p {
+      display: none; }
+    .history img {
+      display: none; }
+  .galeria {
+    height: auto;
+    padding: 20px; }
+    .galeria div p {
+      width: 75%;
+      margin: 0 auto;
+      width: 100%; }
+    .galeria .grid-galeria {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto; }
+      .galeria .grid-galeria .grid-item {
+        margin: 0 auto;
+        height: 450px;
+        width: 450px; } }
+
+@media screen and (max-width: 602px) {
+  .header .navbar .container-fluid .logo h1 {
+    font-size: 20px; }
+  .hero div h2 {
+    font-size: 28px; }
+  .hero div p {
+    font-size: 15px; }
+  .history {
+    background-image: url("../img/history-img(2).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .history div h2 {
+      font-size: 60px; }
+  .footer .logo-footer h2 {
+    font-size: 12px; } }
+
+@media screen and (max-width: 560px) {
+  .galeria div h2 {
+    font-size: 15px; }
+  .galeria div p {
+    font-size: 12px; }
+  .galeria .grid-galeria .grid-item {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px; } }
+
+@media screen and (max-width: 477px) {
+  .header .navbar .container-fluid .logo h1 {
+    font-size: 15px; }
+  .contacto {
+    width: 100%; }
+    .contacto h2 {
+      font-size: 18px; }
+    .contacto .contactdata div img {
+      height: 25px;
+      width: 25px;
+      margin: 7px; }
+  .footer .logo-footer h2 {
+    font-size: 9px; }
+  .footer .logo-footer img {
+    height: 55px;
+    width: 33px; }
+  .footer .links a img {
+    height: 45px;
+    width: 45px; } }
+
+@media screen and (max-width: 440px) {
+  .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 13px; }
+  .hero div h2 {
+    font-size: 20px; }
+  .hero div p {
+    font-size: 12.5px; }
+  .hero .boton a {
+    font-size: 10px;
+    padding: 5px; }
+  .history div h2 {
+    font-size: 40px; }
+  .history div a {
+    font-size: 10px;
+    padding: 5px; }
+  .galeria .boton a {
+    font-size: 10px;
+    padding: 5px; }
+  .contacto .contactdata div h3 {
+    font-size: 15px; }
+  .contacto .contactdata div p {
+    font-size: 12px; }
+  .contacto .boton-contacto a {
+    font-size: 14px;
+    padding: 8px; } }
+
+@media screen and (max-width: 391px) {
+  .header .navbar .container-fluid .logo h1 {
+    font-size: 12px; }
+  .header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+    font-size: 12px; }
+  .galeria .grid-galeria .grid-item {
+    margin: 0 auto;
+    height: 200px;
+    width: 200px; } }
+
+/* ----------COURSES PAGE---------- */
+@media screen and (max-width: 1080px) {
+  .coursehero div h2 {
+    font-size: 45px; }
+  .coursehero div p {
+    font-size: 20px; }
+  .cursos {
+    width: 100%; }
+    .cursos .coursewelcome h3 {
+      font-size: 22px; }
+    .cursos .coursewelcome p {
+      font-size: 16px; }
+    .cursos .cursos-marco {
+      padding: 30px; }
+      .cursos .cursos-marco div h4 {
+        font-size: 20px; }
+      .cursos .cursos-marco div p {
+        font-size: 16px; }
+  .coursebye div p {
+    padding: 5px;
+    font-size: 16px; }
+  .coursebye div a {
+    font-size: 16px;
+    padding: 5px; } }
+
+@media screen and (max-width: 880px) {
+  .coursebye div {
+    padding: 0;
+    padding-top: 10px; } }
+
+@media screen and (max-width: 840px) {
+  .coursehero div h2 {
+    font-size: 35px; }
+  .coursehero div p {
+    font-size: 19px; }
+  .cursos {
+    width: 100%; }
+    .cursos .coursewelcome h3 {
+      font-size: 20px; }
+    .cursos .coursewelcome p {
+      font-size: 15px; }
+    .cursos .cursos-marco {
+      padding: 30px; }
+      .cursos .cursos-marco div h4 {
+        font-size: 18px; }
+      .cursos .cursos-marco div p {
+        font-size: 15px; }
+  .coursebye div p {
+    width: 80%;
+    font-size: 15px; } }
+
+@media screen and (max-width: 800px) {
+  .coursebye div {
+    padding: 0; }
+  .cursos .cursos-marco {
+    margin: 0; } }
+
+@media screen and (max-width: 765px) {
+  .cursos .coursewelcome h3 {
+    font-size: 18px; }
+  .cursos .cursos-marco div h4 {
+    font-size: 16px; } }
+
+@media screen and (max-width: 721px) {
+  .cursos .cursos-marco {
+    padding: 10px 30px 10px 30px; } }
+
+@media screen and (max-width: 691px) {
+  .coursehero div h2 {
+    font-size: 24px; }
+  .coursehero div p {
+    font-size: 15px; }
+  .cursos .coursewelcome h3 {
+    font-size: 16px; }
+  .cursos .coursewelcome p {
+    font-size: 13px; }
+  .cursos .cursos-marco div p {
+    font-size: 13px; }
+  .coursebye div p {
+    font-size: 13px; } }
+
+@media screen and (max-width: 619px) {
+  .cursos .coursewelcome h3 {
+    font-size: 14px; }
+  .cursos .coursewelcome p {
+    font-size: 12px; }
+  .cursos .cursos-marco div h4 {
+    font-size: 14px; }
+  .cursos .cursos-marco div p {
+    font-size: 12px; }
+  .coursebye div p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 548px) {
+  .coursehero div p {
+    width: 80%; }
+  .cursos {
+    width: 90%;
+    padding: 5px 5px 15px 5px; }
+    .cursos .coursewelcome h3 {
+      text-align: center;
+      padding-bottom: 10px; }
+  .coursebye div p {
+    display: none; } }
+
+@media screen and (max-width: 440px) {
+  .cursos {
+    width: 90%; } }
+
+/* ----------HISTORY PAGE---------- */
+@media screen and (max-width: 1200px) {
+  .origen h3 {
+    font-size: 19px;
+    width: 65%; }
+  .origen div img {
+    height: 315px;
+    width: 500px; } }
+
+@media screen and (max-width: 1080px) {
+  .historyhero div h2 {
+    font-size: 45px; }
+  .historyhero div p {
+    font-size: 28px; }
+  .origen div {
+    width: 75%; }
+    .origen div p {
+      font-size: 15px; } }
+
+@media screen and (max-width: 840px) {
+  .historyhero div h2 {
+    font-size: 35px; }
+  .historyhero div p {
+    font-size: 20px; }
+  .origen h3 {
+    font-size: 16px;
+    width: 75%; }
+  .origen div img {
+    height: 275px;
+    width: 400px; }
+  .origen div p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 720px) {
+  .origen h3 {
+    font-size: 15px; }
+  .origen div {
+    width: 80%; }
+    .origen div p {
+      font-size: 13px; } }
+
+@media screen and (max-width: 620px) {
+  .historyhero div h2 {
+    font-size: 28px; }
+  .historyhero div p {
+    font-size: 18px; }
+  .origen h3 {
+    font-size: 14px;
+    width: 65%; }
+  .origen div img {
+    height: 225px;
+    width: 320px; }
+  .origen div p {
+    width: 90%; }
+  .espacio {
+    height: 30px; } }
+
+@media screen and (max-width: 530px) {
+  .origen h3 {
+    font-size: 14px;
+    width: 75%; } }
+
+@media screen and (max-width: 461px) {
+  .historyhero div h2 {
+    font-size: 24px; }
+  .historyhero div p {
+    font-size: 15px; }
+  .origen h3 {
+    font-size: 13px;
+    width: 80%; }
+  .origen div img {
+    height: 185px;
+    width: 280px; }
+  .origen div p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 401px) {
+  .historyhero div p {
+    font-size: 12px; }
+  .origen h3 {
+    font-size: 12px;
+    width: 86%; }
+  .origen div {
+    width: 90%; }
+    .origen div img {
+      height: 165px;
+      width: 250px; }
+    .origen div p {
+      font-size: 11px;
+      font-style: normal; } }
+
+/* ----------GALLERY PAGE---------- */
+@media screen and (max-width: 1080px) {
+  .texto-galeria h2 {
+    font-size: 20px; }
+  .texto-galeria p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 850px) {
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto; }
+    .grid-galeria .grid-item {
+      margin: 0 auto;
+      height: 450px;
+      width: 450px; } }
+
+@media screen and (max-width: 800px) {
+  .texto-galeria h2 {
+    width: 65%;
+    font-size: 17px; }
+  .texto-galeria p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 561px) {
+  .texto-galeria h2 {
+    font-size: 15px; }
+  .grid-galeria .grid-item {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px; } }
+
+@media screen and (max-width: 475px) {
+  .texto-galeria p {
+    width: 85%; } }
+
+@media screen and (max-width: 391px) {
+  .texto-galeria h2 {
+    width: 70%;
+    font-size: 14px; }
+  .texto-galeria p {
+    width: 85%;
+    font-size: 12px; }
+  .grid-galeria .grid-item {
+    margin: 0 auto;
+    height: 200px;
+    width: 200px; } }
+
+/* ----------CONTACT PAGE---------- */
+@media screen and (max-width: 1200px) {
+  .contacthero div h2 {
+    font-size: 36px; } }
+
+@media screen and (max-width: 1080px) {
+  .contacthero div h2 {
+    font-size: 30px; }
+  .contactdata {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0; }
+    .contactdata img {
+      width: 35px;
+      height: 35px;
+      margin: 10px; }
+    .contactdata div h3 {
+      font-size: 18px;
+      padding: 0;
+      margin: 0; }
+    .contactdata div p {
+      font-size: 14px;
+      padding: 0;
+      margin: 0; }
+  .formulario-section .motivar h3 {
+    font-size: 20px; }
+  .formulario-section .motivar p {
+    font-size: 15px; }
+  .formulario-section .formulario div label {
+    font-size: 14px; } }
+
+@media screen and (max-width: 800px) {
+  .contacthero div h2 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 689px) {
+  .contacthero div h2 {
+    font-size: 20px; }
+  .formulario-section .formulario {
+    width: 50%; } }
+
+@media screen and (max-width: 565px) {
+  .contacthero div h2 {
+    font-size: 28px;
+    text-align: center; }
+  .contactdata {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .contactdata img {
+      height: 25px;
+      width: 25px;
+      margin: 7px; }
+  .formulario-section .formulario {
+    width: 75%; }
+    .formulario-section .formulario .boton a {
+      font-size: 14px;
+      padding: 8px;
+      margin-top: 5px; } }
+
+@media screen and (max-width: 450px) {
+  .contacthero div h2 {
+    font-size: 22px;
+    text-align: center; }
+  .formulario-section .motivar h3 {
+    font-size: 15px; }
+  .formulario-section .motivar p {
+    font-size: 12px; }
+  .formulario-section .formulario {
+    width: 80%; }
+    .formulario-section .formulario div label {
+      font-size: 12px; } }
+
+@media screen and (max-width: 440px) {
+  .contactdata div h3 {
+    font-size: 15px; }
+  .contactdata div p {
+    font-size: 12px; } }
