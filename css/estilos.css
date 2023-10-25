@@ -39,7 +39,6 @@ body {
       font-weight: 500; }
 
 .boton {
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,15 +53,18 @@ body {
     border: 3px solid lightpink;
     border-radius: 10px;
     padding: 10px;
-    margin: 2px 4px 5px 4px; }
+    margin: 2px 4px 5px 4px;
+    transition: 1.0s; }
     .boton a:hover {
-      color: lightpink; }
+      color: lightpink;
+      transform: scale(1.07); }
 
 .header {
   background-color: black;
   position: sticky;
   top: 0;
-  color: white; }
+  color: white;
+  z-index: 1; }
   .header div img {
     width: 43px;
     height: 65px;
@@ -78,7 +80,8 @@ body {
         text-decoration: none;
         color: black;
         font-weight: 600;
-        font-size: large; }
+        font-size: large;
+        transition: 0.45s; }
         .header nav ul li a.active:hover {
           color: white; }
         .header nav ul li a:hover {
@@ -113,7 +116,7 @@ body {
   width: 100%;
   height: 80vh;
   color: white;
-  background-image: url("../img/home-p.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.325)), url("../img/home-p.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -128,7 +131,6 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
     padding: 10px; }
     .hero div h2 {
       font-size: 45px;
@@ -136,7 +138,7 @@ body {
       font-weight: 900; }
     .hero div p {
       font-size: 25px;
-      font-weight: 500;
+      font-weight: 600;
       text-align: center; }
 
 .history {
@@ -168,9 +170,11 @@ body {
       font-weight: 600;
       border: 3px solid lightpink;
       border-radius: 10px;
-      padding: 10px; }
+      padding: 10px;
+      transition: 1.0s; }
       .history div a:hover {
-        color: lightpink; }
+        color: lightpink;
+        transform: scale(1.07); }
   .history img {
     width: 50%;
     object-fit: cover; }
@@ -182,9 +186,9 @@ body {
   color: white;
   padding: 40px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center; }
   .galeria div h2 {
     font-size: 35px;
@@ -194,19 +198,21 @@ body {
     font-size: larger;
     font-weight: 600;
     padding: 15px; }
+  .galeria .boton {
+    margin-bottom: 15px; }
 
 .contacto {
   width: 80%;
   margin: 0 auto;
   height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
   .contacto h2 {
     text-align: center;
     padding: 10px; }
   .contacto .boton-contacto {
-    width: 94%;
+    width: 85%;
     margin: 0 auto;
     font-size: larger;
     background-color: lightpink;
@@ -217,7 +223,8 @@ body {
     .contacto .boton-contacto a {
       text-decoration: none;
       list-style: none;
-      color: black; }
+      color: black;
+      transition: 0.5s; }
       .contacto .boton-contacto a:hover {
         color: white; }
 
@@ -225,24 +232,22 @@ body {
 .coursehero {
   width: 100%;
   height: 80vh;
-  background-image: url("../img/cursos-p.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.325)), url("../img/cursos-p.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-position: bottom;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center; }
   .coursehero div {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
     text-align: center;
     padding: 10px; }
@@ -254,7 +259,7 @@ body {
       font-size: 25px;
       width: 65%;
       padding: 10px;
-      font-weight: 500;
+      font-weight: 600;
       text-align: center; }
 
 .cursos {
@@ -264,9 +269,9 @@ body {
   padding: 20px; }
   .cursos .coursewelcome {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: auto; }
     .cursos .coursewelcome h3 {
       padding-top: 30px;
@@ -291,9 +296,9 @@ body {
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     .coursebye div p {
       text-align: center;
       font-size: larger;
@@ -309,7 +314,8 @@ body {
       font-weight: 600;
       border-top: 3px solid lightpink;
       border-bottom: 3px solid lightpink;
-      padding: 10px; }
+      padding: 10px;
+      transition: color 0.5s; }
       .coursebye div a:hover {
         color: lightpink; }
 
@@ -325,7 +331,7 @@ body {
   text-align: center; }
   .historyhero div {
     width: auto;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.325);
     padding: 20px; }
     .historyhero div h2 {
       font-weight: 900;
@@ -334,7 +340,7 @@ body {
       font-size: 35px;
       width: 100%;
       padding: 10px;
-      font-weight: 500; }
+      font-weight: 600; }
 
 .origen {
   background-color: black;
@@ -359,11 +365,12 @@ body {
     padding: 3.5% 2.5% 2.5% 2.5%;
     color: black;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
     .origen div img {
-      border: 3px solid black; }
+      border: 3px solid black;
+      margin-bottom: 30px; }
     .origen div p {
       width: 80%;
       font-size: 16px;
@@ -387,8 +394,8 @@ body {
   padding: 80px 35px 100px 35px;
   font-size: 25px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center; }
   .texto-galeria h2 {
     text-align: center; }
@@ -397,7 +404,7 @@ body {
 .contacthero {
   width: 100%;
   height: 80vh;
-  background-image: url("../img/contacto-p.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.325)), url("../img/contacto-p.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -408,7 +415,6 @@ body {
   color: white; }
   .contacthero div {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -423,14 +429,14 @@ body {
 .formulario-section {
   height: 80vh;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .formulario-section .motivar {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     .formulario-section .motivar h3 {
       font-weight: 600;
       text-align: center; }
@@ -446,6 +452,10 @@ body {
     .formulario-section .formulario div .input {
       width: 100%;
       height: initial; }
+    .formulario-section .formulario .boton a {
+      font-size: 18px;
+      padding: 8px;
+      margin-top: 10px; }
 
 .footer {
   background-color: black;
@@ -629,8 +639,8 @@ body {
     font-size: 12px; }
   .galeria .grid-galeria .grid-item {
     margin: 0 auto;
-    height: 200px;
-    width: 200px; } }
+    height: 230px;
+    width: 230px; } }
 
 /* ----------COURSES PAGE---------- */
 @media screen and (max-width: 1080px) {

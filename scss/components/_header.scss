@@ -3,6 +3,7 @@
     position: sticky;
     top: 0;
     color: $color-terciario;
+    z-index: 1;
 
     div {
         img {
@@ -27,6 +28,7 @@
                     color: black;
                     font-weight: 600;
                     font-size: large;
+                    transition: 0.45s;
 
                     &.active:hover {
                         color: $color-terciario;

@@ -2,4 +2,10 @@ $color-principal: black;
 $color-secundario: lightpink;
 $color-terciario: white;
 
-$color-transparencia: rgba(0, 0, 0, 0.404);
+$color-transparencia: rgba(0, 0, 0, 0.325);
+
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
