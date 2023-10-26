@@ -2,9 +2,9 @@
 
 .hero {
     width: 100%;
-    height: 80vh;
-    color: $color-terciario;
-    background-image: linear-gradient(($color-transparencia), $color-transparencia ), url("../img/home-p.png");
+    height: 81vh;
+    color: nth($colores, 3);
+    background-image: linear-gradient(nth($colores, 4), nth($colores,4 )), url("../img/home-p.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,7 +34,7 @@
 
 .history {
     width: 100%;
-    height: 80vh;
+    height: 81vh;
     display: flex;
     justify-content: center;
 
@@ -49,27 +49,27 @@
         }
 
         p {
+            padding: 30px 0px 0px 0px;
             width: 50%;
-            margin-bottom: 22px;
             text-align: justify;
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 500;
         }
 
         a {
             text-decoration: none;
             list-style: none;
-            color: $color-terciario;
-            background-color: $color-principal;
+            color: map-get($map: $boton, $key: color-txt);
+            background-color: map-get($map: $boton, $key: fondo);
             font-size: 18px;
             font-weight: 600;
-            border: 3px solid $color-secundario;
+            border: map-get($map: $boton, $key: borde);
             border-radius: 10px;
             padding: 10px;
             transition: 1.0s;
 
             &:hover {
-                color: $color-secundario;
+                color: nth($colores, 2);
                 transform: scale(1.07) ;
             }
         }
@@ -83,37 +83,48 @@
 
 .galeria {
     width: 100%;
-    height: 100vh;
-    background-color: $color-principal;
-    color: $color-terciario;
-    padding: 40px;
+    height: 81vh;
+    background-color: nth($colores, 1);
+    color: nth($colores, 3);
+    padding: 20px;
     @include flex (flex, center, center);
     flex-direction: column;
     text-align: center;
 
     div {
         h2 {
-            font-size: 35px;
+            font-size: 30px;
             font-weight: 600;
-            padding-top: 15px;
+            padding-top: 8px;
+            margin: 0;
         }
 
         p {
-            font-size: larger;
+            font-size: 18px;
             font-weight: 600;
-            padding: 15px;
+            padding: 6px;
+            margin: 0;
+        }
+    }
+
+    .grid-galeria{
+
+        padding: 15px;
+
+        .grid-item{
+            height: 48vh;
         }
     }
 
     .boton{
-        margin-bottom: 15px;
+        margin: 5px;
     }
 }
 
 .contacto {
     width: 80%;
     margin: 0 auto;
-    height: 80vh;
+    height: 81vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -127,7 +138,7 @@
         width: 85%;
         margin: 0 auto;
         font-size: larger;
-        background-color: $color-secundario;
+        background-color: nth($colores, 2);
         text-align: center;
         padding: 10px;
         border-radius: 10px;
@@ -136,11 +147,11 @@
         a {
             text-decoration: none;
             list-style: none;
-            color: $color-principal;
+            color: nth($colores, 1);
             transition: 0.5s;
 
             &:hover {
-                color: $color-terciario;
+                color: nth($colores, 3);
             }
         }
     }
@@ -151,20 +162,20 @@
 .coursehero {
     width: 100%;
     height: 80vh;
-    background-image: linear-gradient(($color-transparencia), $color-transparencia ), url("../img/cursos-p.jpg");
+    background-image: linear-gradient(nth($colores, 4), nth($colores,4 )), url("../img/cursos-p.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:bottom;
     @include flex (flex, center, center);
-    color: $color-terciario;
+    color: nth($colores, 3);
     text-align: center;
 
     div {
         width: 100%;
         @include flex (flex, center, center);
         flex-direction: column;
-        color: $color-terciario;
+        color: nth($colores, 3);
         text-align: center;
         padding: 10px;
 
@@ -202,7 +213,7 @@
     }
 
     .cursos-marco {
-        border: 3px solid $color-secundario;
+        border: 3px solid nth($colores, 2);
         border-radius: 15px;
         padding: 30px 90px 30px 90px;
         margin: 30px;
@@ -227,8 +238,8 @@
     width: 100%;
 
     div {
-        background-color: $color-principal;
-        color: $color-terciario;
+        background-color: nth($colores, 1);
+        color: nth($colores, 3);
         @include flex (flex, center, center);
         flex-direction: column;
 
@@ -243,17 +254,17 @@
             text-decoration: none;
             text-align: center;
             list-style: none;
-            color: $color-terciario;
-            background-color: $color-principal;
+            color: nth($colores, 3);
+            background-color: nth($colores, 1);
             font-size: 18px;
             font-weight: 600;
-            border-top: 3px solid $color-secundario;
-            border-bottom: 3px solid $color-secundario;
+            border-top: 3px solid nth($colores, 2);
+            border-bottom: 3px solid nth($colores, 2);
             padding: 10px;
             transition: color 0.5s;
 
             &:hover {
-                color: $color-secundario;
+                color: nth($colores, 2);
             }
         }
     }
@@ -264,19 +275,18 @@
 .historyhero {
     width: 100%;
     height: 80vh;
-    background-color: $color-principal;
+    background-color: nth($colores, 1);
     @include flex (flex, center, center);
-    color: $color-terciario;
+    color: nth($colores, 3);
     text-align: center;
 
     div {
         width: auto;
-        background-color: $color-transparencia;
         padding: 20px;
 
         h2 {
-            color: lightpink;
-            border: 2px solid white;
+            color: nth($colores, 2);
+            border: 2px solid nth($colores, 3);
             padding: 10px 0px 10px 0px;
             width: 95%;
             margin: 0 auto;
@@ -294,7 +304,7 @@
 }
 
 .origen {
-    background-color: $color-principal;
+    background-color: nth($colores, 1);
     background-size: 75%;
     width: 100%;
     height: auto;
@@ -306,7 +316,7 @@
         padding-bottom: 5%;
         font-size: 20px;
         font-weight: 600;
-        color: $color-terciario;
+        color: nth($colores, 3);
         text-align: center;
     }
 
@@ -314,17 +324,17 @@
         width: 59%;
         margin: 0 auto;
         height: auto;
-        background-color: $color-terciario;
-        border: 10px solid $color-secundario;
+        background-color: nth($colores, 3);
+        border: 10px solid nth($colores, 2);
         padding: 3.5% 2.5% 2.5% 2.5%;
-        color: $color-principal;
+        color: nth($colores, 1);
         @include flex (flex, center, center);
         flex-direction: column;
 
         img {
             height: 337px;
             width: 600px;
-            border: 3.5px solid $color-secundario;
+            border: 3.5px solid nth($colores, 2);
             margin-bottom: 30px;
         }
 
@@ -337,7 +347,7 @@
 }
 
 .espacio {
-    background-color: $color-principal;
+    background-color: nth($colores, 1);
     height: 50px;
 }
 
@@ -361,9 +371,9 @@
 }
 
 .texto-galeria {
-    background-color: $color-principal;
-    color: $color-terciario;
-    padding: 80px 35px 100px 35px;
+    background-color: nth($colores, 1);
+    color: nth($colores, 3);
+    padding: 90px 5px 90px 5px;
     font-size: 25px;
     @include flex (flex, center, center);
     text-align: center;
@@ -378,13 +388,13 @@
 .contacthero {
     width: 100%;
     height: 80vh;
-    background-image: linear-gradient(($color-transparencia), $color-transparencia ), url("../img/contacto-p.webp");
+    background-image: linear-gradient(nth($colores, 4), nth($colores,4 )), url("../img/contacto-p.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: inherit;
     @include flex (flex, center, center);
-    color: $color-terciario;
+    color: nth($colores, 3);
 
     div {
         width: 100%;
@@ -426,7 +436,7 @@
 
     .formulario {
         width: 40%;
-        border: 3px solid $color-secundario;
+        border: 3px solid nth($colores, 2);
         border-radius: 10px;
         padding: 15px;
         margin: 10px 10px 50px 10px;

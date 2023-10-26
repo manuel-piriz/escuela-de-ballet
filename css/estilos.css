@@ -114,9 +114,9 @@ body {
 /** Home Page */
 .hero {
   width: 100%;
-  height: 80vh;
+  height: 81vh;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.325)), url("../img/home-p.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.327)), url("../img/home-p.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -143,7 +143,7 @@ body {
 
 .history {
   width: 100%;
-  height: 80vh;
+  height: 81vh;
   display: flex;
   justify-content: center; }
   .history div {
@@ -156,10 +156,10 @@ body {
       font-weight: 900;
       font-size: 50px; }
     .history div p {
+      padding: 30px 0px 0px 0px;
       width: 50%;
-      margin-bottom: 22px;
       text-align: justify;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 500; }
     .history div a {
       text-decoration: none;
@@ -181,30 +181,36 @@ body {
 
 .galeria {
   width: 100%;
-  height: 100vh;
+  height: 81vh;
   background-color: black;
   color: white;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center; }
   .galeria div h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
-    padding-top: 15px; }
+    padding-top: 8px;
+    margin: 0; }
   .galeria div p {
-    font-size: larger;
+    font-size: 18px;
     font-weight: 600;
+    padding: 6px;
+    margin: 0; }
+  .galeria .grid-galeria {
     padding: 15px; }
+    .galeria .grid-galeria .grid-item {
+      height: 48vh; }
   .galeria .boton {
-    margin-bottom: 15px; }
+    margin: 5px; }
 
 .contacto {
   width: 80%;
   margin: 0 auto;
-  height: 80vh;
+  height: 81vh;
   display: flex;
   justify-content: center;
   flex-direction: column; }
@@ -232,7 +238,7 @@ body {
 .coursehero {
   width: 100%;
   height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.325)), url("../img/cursos-p.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.327)), url("../img/cursos-p.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -331,7 +337,6 @@ body {
   text-align: center; }
   .historyhero div {
     width: auto;
-    background-color: rgba(0, 0, 0, 0.325);
     padding: 20px; }
     .historyhero div h2 {
       color: lightpink;
@@ -399,7 +404,7 @@ body {
 .texto-galeria {
   background-color: black;
   color: white;
-  padding: 80px 35px 100px 35px;
+  padding: 90px 5px 90px 5px;
   font-size: 25px;
   display: flex;
   justify-content: center;
@@ -412,7 +417,7 @@ body {
 .contacthero {
   width: 100%;
   height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.325)), url("../img/contacto-p.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.327)), url("../img/contacto-p.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -493,7 +498,13 @@ body {
 
 /* ------------MEDIA QUERY------------- */
 /* ----------Home page--------- */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1228px) {
+  .galeria div p {
+    font-size: 17;
+    width: 85%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 1081px) {
   .hero .boton a {
     font-size: 15px;
     padding: 8px; }
@@ -502,6 +513,14 @@ body {
     padding: 8px; }
   .galeria {
     padding: 0; }
+    .galeria div h2 {
+      font-size: 25px; }
+    .galeria div p {
+      font-size: 16px; }
+    .galeria .grid-galeria {
+      gap: 18px; }
+      .galeria .grid-galeria .grid-item {
+        height: auto; }
     .galeria .boton a {
       font-size: 15px;
       padding: 8px; }
@@ -622,16 +641,16 @@ body {
   .hero div p {
     font-size: 12.5px; }
   .hero .boton a {
-    font-size: 10px;
-    padding: 5px; }
+    font-size: 12px;
+    padding: 7px; }
   .history div h2 {
     font-size: 40px; }
   .history div a {
-    font-size: 10px;
-    padding: 5px; }
+    font-size: 12px;
+    padding: 7px; }
   .galeria .boton a {
-    font-size: 10px;
-    padding: 5px; }
+    font-size: 12px;
+    padding: 7px; }
   .contacto .contactdata div h3 {
     font-size: 15px; }
   .contacto .contactdata div p {
@@ -877,7 +896,9 @@ body {
   .texto-galeria h2 {
     font-size: 20px; }
   .texto-galeria p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .grid-galeria {
+    gap: 21px; } }
 
 @media screen and (max-width: 850px) {
   .grid-galeria {
@@ -915,10 +936,10 @@ body {
 
 @media screen and (max-width: 391px) {
   .texto-galeria h2 {
-    width: 70%;
+    width: 60%;
     font-size: 14px; }
   .texto-galeria p {
-    width: 85%;
+    width: 90%;
     font-size: 12px; }
   .grid-galeria {
     padding: 30px 0px 30px 0px; }

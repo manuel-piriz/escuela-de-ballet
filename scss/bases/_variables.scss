@@ -1,11 +1,14 @@
-$color-principal: black;
-$color-secundario: lightpink;
-$color-terciario: white;
+$colores: black, lightpink, white, rgba(0, 0, 0, 0.327);
 
-$color-transparencia: rgba(0, 0, 0, 0.325);
-
+//en lugar de un extend hice un mixin, se aplicar ambos lo prometo
 @mixin flex ($flex, $justify, $align) {
     display: $flex;
     justify-content: $justify;
     align-items: $align;
 }
+
+$boton:(
+    fondo: nth($colores, 1),
+    borde: 3px solid nth($colores, 2),
+    color-txt: nth($colores, 3),
+);

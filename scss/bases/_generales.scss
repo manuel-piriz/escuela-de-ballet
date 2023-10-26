@@ -61,18 +61,18 @@ body {
     a {
         text-decoration: none;
         list-style: none;
-        color: $color-terciario;
-        background-color: $color-principal;
+        color: map-get($map: $boton, $key: color-txt);
+        background-color: map-get($map: $boton, $key: fondo);
         font-size: 20px;
         font-weight: 600;
-        border: 3px solid $color-secundario;
+        border: map-get($map: $boton, $key: borde);
         border-radius: 10px;
         padding: 10px;
         margin: 2px 4px 5px 4px;
         transition: 1.0s;
 
         &:hover {
-            color: $color-secundario;
+            color: nth($colores, 2);
             transform: scale(1.07) ;
         }
     }

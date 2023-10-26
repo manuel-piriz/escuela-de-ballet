@@ -1,8 +1,8 @@
 .header {
-    background-color: $color-principal;
+    background-color: nth($colores, 1);
     position: sticky;
     top: 0;
-    color: $color-terciario;
+    color: nth($colores, 3);
     z-index: 1;
 
     div {
@@ -25,17 +25,17 @@
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: nth($colores, 1);
                     font-weight: 600;
                     font-size: large;
                     transition: 0.45s;
 
                     &.active:hover {
-                        color: $color-terciario;
+                        color: nth($colores, 3);
                     }
 
                     &:hover {
-                        color: $color-terciario;
+                        color: nth($colores, 3);
                     }
                 }
             }
@@ -74,8 +74,8 @@
     }
 
     .collapse {
-        background-color: $color-secundario;
-        border-top: 3px solid $color-terciario;
-        border-bottom: 3px solid $color-terciario;
+        background-color: nth($colores, 2);
+        border-top: 3px solid nth($colores, 3);
+        border-bottom: 3px solid nth($colores, 3);
     }
 }
